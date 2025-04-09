@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elementary Grading System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Elementary Grading Website</h2>
+
+<form id="gradeForm">
+  <label>Student Name:
+    <input type="text" id="studentName" required>
+  </label>
+
+  <label>Student ID:
+    <input type="text" id="studentID" required>
+  </label>
+
+  <label>Math Score:
+    <input type="number" id="math" min="0" max="100" required>
+  </label>
+
+  <label>Science Score:
+    <input type="number" id="science" min="0" max="100" required>
+  </label>
+
+  <label>Social Science Score:
+    <input type="number" id="social" min="0" max="100" required>
+  </label>
+
+  <label>Art Score:
+    <input type="number" id="art" min="0" max="100" required>
+  </label>
+
+  <label>English Score:
+    <input type="number" id="english" min="0" max="100" required>
+  </label>
+
+  <label>Spanish Score:
+    <input type="number" id="language" min="0" max="100" required>
+  </label>
+
+  <label>PE Score:
+    <input type="number" id="pe" min="0" max="100" required>
+  </label>
+
+  <button type="button" onclick="calculateGrades()">Calculate Grades</button>
+</form>
+<br>
+<div class="result" id="resultBox" style="display:none;">
+  <p id="studentInfo"></p>
+  <p id="totalScore"></p>
+  <p id="percentage"></p>
+  <p id="gpa"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elementary Grading System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Elementary Grading System</h2>
+
+  <table id="gradeTable">
+    <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>ID</th>
+        <th>Math</th>
+        <th>Science</th>
+        <th>Social</th>
+        <th>Art</th>
+        <th>English</th>
+        <th>Spanish</th>
+        <th>PE</th>
+        <th>Total</th>
+        <th>Percentage</th>
+        <th>GPA</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      <!-- Rows will be added dynamically -->
+    </tbody>
+  </table>
+
+  <div class="buttons">
+    <button onclick="addRow()">Add Row</button>
+    <button onclick="removeRow()">Remove Last Row</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
